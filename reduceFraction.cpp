@@ -52,11 +52,16 @@ int main() {
 
     int data[] = {1, 2, 3, 4, 5};
 
-    int* p_data = data;
+    int *array = new int[20];
+    for (int i = 0; i < 20; i++) {
+        array[i] = i+2;
+    }
 
     for (int i = 0; i < 5; ++i) {
-        std::cout<< *(p_data+i) <<std::endl;
+        std::cout<< *(array+i) <<std::endl;
     }
+
+
 
 }
 
