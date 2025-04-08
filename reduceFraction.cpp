@@ -36,17 +36,10 @@ void reduce(Fraction *input) {
 
 int main() {
 
-    int *p_var;
     int var = 55;
-    p_var = &var;
-
     int &game = var;
-
-    std::cout << game << std::endl;
-
-    game++;
-
-    std::cout << var << std::endl;
+    std::cout << &game << std::endl;
+    std::cout << &var << std::endl;
 }
 
 void test() {
