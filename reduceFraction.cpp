@@ -35,31 +35,18 @@ void reduce(Fraction *input) {
 }
 
 int main() {
-    int var = 19;
-    int* p_var = &var;
 
-    double num = 1.55;
-    double* p_num = &num;
+    int *p_var;
+    int var = 55;
+    p_var = &var;
 
-    (*p_num)++;  // Increment the double value
+    int &game = var;
 
-    // Corrected initialization with zeroed values for the dynamic array
-    int* array = new int[20]();
-    for (int i = 0; i < 20; i++) {
-        array[i] = i + 1;
-    }
+    std::cout << game << std::endl;
 
-    for (int i = 0; i < 20; i++) {
-        std::cout << array[i] << std::endl;
-    }
+    game++;
 
-
-    int* xyz = array + 3;  // Pointer to element at index 3 of the array
-    float sum = 0;
-    for (int i = 0; i < 17; ++i) {  // Corrected: Loop within the valid range
-        sum += xyz[i];
-    }
-    std::cout << "average is " << sum / 17 << std::endl;
+    std::cout << var << std::endl;
 }
 
 void test() {
