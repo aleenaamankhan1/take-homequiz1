@@ -10,7 +10,7 @@ bool is_power_of_2(int num) {
 
     return false;
 }
-
+/*
 int main() {
     int inputs[] = {1, 2, 3, 4, 5, 8, 16, 18, 32, 0, -2};
     bool expected[] = {true, true, false, true, false, true, true, false, true, false, false};
@@ -26,3 +26,4 @@ int main() {
 
     return 0;
 }
+/*

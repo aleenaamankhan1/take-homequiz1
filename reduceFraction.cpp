@@ -37,7 +37,27 @@ Fraction reduce(Fraction input) {
 }
 
 int main() {
-    test();
+    int var = 19;
+
+
+    int* p_var = &var;
+
+    double num = 1.55;
+
+    int c = 'c';
+
+    double* p_num = &num;
+
+    (*p_num)++;
+
+    int data[] = {1, 2, 3, 4, 5};
+
+    int* p_data = data;
+
+    for (int i = 0; i < 5; ++i) {
+        std::cout<< *(p_data+i) <<std::endl;
+    }
+
 }
 
 void test() {

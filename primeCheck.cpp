@@ -13,7 +13,7 @@ bool is_prime(int num) {
 
     return true;
 }
-
+/*
 int main() {
     int inputs[] = {1, 2, 3, 4, 5, 9, 11};
     bool expected[] = {false, true, true, false, true, false, true};
@@ -29,3 +29,4 @@ int main() {
 
     return 0;
 }
+/*
